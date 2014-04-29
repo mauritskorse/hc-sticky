@@ -618,7 +618,8 @@
 						}
 						if (!isAttached) {
 							// run it once to disable glitching
-							options.fn.scroll(true);
+							// disabled, causes unwanted callback calls on plugin initiation
+							// options.fn.scroll(true);
 							// attach function to scroll event only once
 							$window.on('scroll', options.fn.scroll);
 						}
